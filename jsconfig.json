@@ -1,0 +1,14 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "checkJs": true,
+    "baseUrl": "./",
+    "paths": {
+      "@middleware/*": ["src/middleware/*"],
+      "@components/*": ["src/components/*"],
+      "@routing/*": ["./src/routing/*"]
+    }
+  },
+  "include": ["./src/*", "index.js"],
+  "buildOptions": {}
+}
