@@ -1,10 +1,10 @@
 const { join } = require('node:path');
 const fs = require('node:fs/promises');
 const { existsSync, mkdirSync } = require('node:fs');
-
+const RELATIVE_PATH = '../src/fakeDB';
 const loadDB = async (filename) => {
-    const target = join(__dirname, '../fakeDB', `${filename}.json`);
-    const dir = join(__dirname, '../fakeDB');
+    const target = join(__dirname, RELATIVE_PATH, `${filename}.json`);
+    const dir = join(__dirname, RELATIVE_PATH);
     try {
         const data = await fs.readFile(target, { encoding: 'utf-8' });
         return JSON.parse(data);
@@ -18,8 +18,8 @@ const loadDB = async (filename) => {
 };
 
 const saveDB = async (filename, data) => {
-    const target = join(__dirname, '../fakeDB', `${filename}.json`);
-    const dir = join(__dirname, '../fakeDB');
+    const target = join(__dirname, RELATIVE_PATH, `${filename}.json`);
+    const dir = join(__dirname, RELATIVE_PATH);
     if (!existsSync(dir)) mkdirSync(dir, 744);
 
     // const current = await loadDB(filename);

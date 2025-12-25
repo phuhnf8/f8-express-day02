@@ -1,7 +1,7 @@
 const DB_NAME = 'comments';
-const { loadDB, saveDB } = require('@/utils/jsonDB');
-const NotFoundError = require('@/utils/NotFoundError');
-const ValidateError = require('@/utils/ValidateError');
+const { loadDB, saveDB } = require('@utils/jsonDB');
+const NotFoundError = require('@utils/NotFoundError');
+const ValidateError = require('@utils/ValidateError');
 class CommentModel {
     async getList() {
         const data = await loadDB(DB_NAME);

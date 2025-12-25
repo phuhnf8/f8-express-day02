@@ -9,9 +9,9 @@
             "@components/*": ["src/components/*"],
             "@controllers/*": ["src/controllers/*"],
             "@routes/*": ["src/routes/*"],
-            "@utils/*": ["./src/utils/*"]
+            "@utils/*": ["utils/*"]
         }
     },
-    "include": ["./src/*", "index.js", "src/middlewares/output"],
+    "include": ["./src/*", "index.js", "src/middlewares/output", "utils"],
     "buildOptions": {}
 }
