@@ -19,7 +19,7 @@
         "@head": "src/head",
         "@controllers": "src/controllers",
         "@models": "src/models",
-        "@routing": "src/routing",
+        "@routes": "src/routes",
         "@middlewares": "src/middlewares",
         "@utils": "src/utils"
     }

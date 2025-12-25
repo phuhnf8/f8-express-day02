@@ -1,7 +1,6 @@
 const formatOutput = require('@/middlewares/output');
 const handleErrors = require('@/middlewares/errors');
-const NotFoundError = require('@/utils/NotFoundError');
-const apiRoute = require('@routing/api.route');
+const apiRoute = require('@routes/api.route');
 const useRoute = (app) => {
     // Added output format
     formatOutput(app);

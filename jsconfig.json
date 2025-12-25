@@ -8,7 +8,7 @@
             "@middleware/*": ["src/middleware/*"],
             "@components/*": ["src/components/*"],
             "@controllers/*": ["src/controllers/*"],
-            "@routing/*": ["./src/routing/*"],
+            "@routes/*": ["src/routes/*"],
             "@utils/*": ["./src/utils/*"]
         }
     },

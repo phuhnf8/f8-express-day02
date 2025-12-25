@@ -2,7 +2,7 @@ require('module-alias/register');
 const express = require('express');
 const app = express();
 
-const useRoute = require('@routing/index.js');
+const useRoute = require('@routes/index.js');
 const importHeaders = require('@head');
 
 const PORT = 3000;
