@@ -12,6 +12,6 @@
             "@utils/*": ["utils/*"]
         }
     },
-    "include": ["./src/*", "index.js", "src/middlewares/output", "utils"],
+    "include": ["./src/*", "server.js", "src/middlewares/output", "utils"],
     "buildOptions": {}
 }
