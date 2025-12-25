@@ -1,7 +1,7 @@
 const formatOutput = require('@/middlewares/output');
 const handleErrors = require('@/middlewares/errors');
 const NotFoundError = require('@/utils/NotFoundError');
-
+const apiRoute = require('@routing/api.route');
 const useRoute = (app) => {
     // Added output format
     formatOutput(app);
@@ -9,6 +9,8 @@ const useRoute = (app) => {
     app.get('/', (req, res, next) => {
         res.ok('Welcome to the API');
     });
+
+    app.use('/api', apiRoute);
 
     // Error handling
     handleErrors(app);

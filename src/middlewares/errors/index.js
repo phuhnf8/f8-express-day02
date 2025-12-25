@@ -6,7 +6,7 @@ const handleErrors = (app) => {
     });
     app.use((err, req, res, next) => {
         if (err instanceof NotFoundError) {
-            return res.notFound(err.item);
+            return res.notFound(err.message);
         }
         console.error(err);
         return res.err('Unexpected error', 500);

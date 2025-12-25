@@ -11,6 +11,10 @@ const importHeaders = (app) => {
     // Helmet
     app.use(helmet());
 
+    // JSON body parser
+    app.use(express.json());
+    app.use(express.urlencoded({ extended: true }));
+
     // Static path
     app.use('/static', express.static('static'));
     app.use(express.json());

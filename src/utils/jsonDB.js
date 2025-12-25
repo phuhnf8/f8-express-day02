@@ -11,30 +11,23 @@ const loadDB = async (filename) => {
     } catch (err) {
         if (err.code === 'ENOENT') {
             if (!existsSync(target)) mkdirSync(dir, 744);
-            fs.writeFile(target, JSON.stringify([]));
-            return '[]';
+            await fs.writeFile(target, JSON.stringify([]));
+            return [];
         }
     }
 };
 
 const saveDB = async (filename, data) => {
     const target = join(__dirname, '../fakeDB', `${filename}.json`);
-    const txt = await loadDB(filename);
-    console.log(txt);
-    const current = JSON.parse(txt);
-    current.push(data);
-    const content = JSON.stringify(current);
+    const dir = join(__dirname, '../fakeDB');
+    if (!existsSync(dir)) mkdirSync(dir, 744);
+
+    // const current = await loadDB(filename);
+    // current.push(data);
+
+    const content = JSON.stringify(data);
     fs.writeFile(target, content);
 };
-
-(async () => {
-    console.log(
-        await saveDB('db', {
-            boo: 'beep',
-            hil: 1203,
-        })
-    );
-})();
 
 module.exports = {
     loadDB,

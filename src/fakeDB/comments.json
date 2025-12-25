@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "postId": 1,
+        "content": "Great explanation on streams! Helped me a lot.",
+        "createdAt": "2024-06-01T12:00:00Z"
+    },
+    {
+        "id": 2,
+        "postId": 1,
+        "content": "Can you provide more examples on stream piping?",
+        "createdAt": "2024-06-01T13:45:00Z"
+    },
+    {
+        "id": 3,
+        "postId": 2,
+        "content": "Async/await really makes code cleaner!",
+        "createdAt": "2024-06-02T15:00:00Z"
+    },
+    {
+        "id": 4,
+        "postId": 2,
+        "content": "What about error handling with async/await?",
+        "createdAt": "2024-06-02T16:10:00Z"
+    },
+    {
+        "id": 5,
+        "postId": 3,
+        "content": "Thanks for the API design tips!",
+        "createdAt": "2024-06-03T10:00:00Z"
+    },
+    {
+        "id": 6,
+        "postId": 3,
+        "content": "How do you version your APIs?",
+        "createdAt": "2024-06-03T11:30:00Z"
+    },
+    {
+        "id": 7,
+        "postId": 4,
+        "content": "Array methods are so powerful!",
+        "createdAt": "2024-06-04T17:00:00Z"
+    },
+    {
+        "id": 8,
+        "postId": 4,
+        "content": "Could you cover more about reduce()?",
+        "createdAt": "2024-06-04T18:20:00Z"
+    },
+    {
+        "id": 9,
+        "postId": 5,
+        "content": "Deployment tips were very useful.",
+        "createdAt": "2024-06-05T13:00:00Z"
+    },
+    {
+        "id": 10,
+        "postId": 5,
+        "content": "Which cloud service do you recommend for beginners?",
+        "createdAt": "2024-06-05T14:15:00Z"
+    }
+]
