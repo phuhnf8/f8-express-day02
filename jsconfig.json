@@ -1,14 +1,16 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "checkJs": true,
-    "baseUrl": "./",
-    "paths": {
-      "@middleware/*": ["src/middleware/*"],
-      "@components/*": ["src/components/*"],
-      "@routing/*": ["./src/routing/*"]
-    }
-  },
-  "include": ["./src/*", "index.js"],
-  "buildOptions": {}
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+            "@/head": ["src/head"],
+            "@middleware/*": ["src/middleware/*"],
+            "@components/*": ["src/components/*"],
+            "@routing/*": ["./src/routing/*"],
+            "@utils/*": ["./src/utils/*"]
+        }
+    },
+    "include": ["./src/*", "index.js", "src/middlewares/output"],
+    "buildOptions": {}
 }

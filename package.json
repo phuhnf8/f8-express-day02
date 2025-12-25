@@ -1,25 +1,26 @@
 {
-  "name": "day02",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "start": "node --watch --inspect ./index.js"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.2.1",
-    "helmet": "^8.1.0",
-    "joi": "^18.0.2",
-    "module-alias": "^2.2.3"
-  },
-  "_moduleAliases": {
-    "@root": ".",
-    "@src": "src",
-    "@controllers": "src/controllers",
-    "@models": "src/models",
-    "@routing": "src/routing",
-    "@middlewares": "src/middlewares",
-    "@utils": "src/utils"
-  }
+    "name": "day02",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "start": "node --watch --inspect ./index.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.2.1",
+        "helmet": "^8.1.0",
+        "joi": "^18.0.2",
+        "module-alias": "^2.2.3"
+    },
+    "_moduleAliases": {
+        "@root": ".",
+        "@": "src",
+        "@head": "src/head",
+        "@controllers": "src/controllers",
+        "@models": "src/models",
+        "@routing": "src/routing",
+        "@middlewares": "src/middlewares",
+        "@utils": "src/utils"
+    }
 }
